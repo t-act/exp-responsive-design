@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 clamp(16px, 4vw, 48px);
+  height: clamp(48px, 8vw, 72px);
+  border-bottom: 1px solid var(--border);
+  gap: clamp(16px, 3vw, 32px);
+}
+
+.logo {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(16px, 2.5vw, 22px);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  gap: clamp(8px, 2vw, 24px);
+  margin-left: auto;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: clamp(12px, 1.6vw, 16px);
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.avatar {
+  width: clamp(28px, 4vw, 36px);
+  height: clamp(28px, 4vw, 36px);
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(12px, 1.5vw, 16px);
+  font-weight: 600;
+  flex-shrink: 0;
+}
